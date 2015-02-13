@@ -74,7 +74,8 @@ public class Predictor {
 	public Predictor(String schedulingPattern, long start)
 			throws InvalidPatternException {
 		this.schedulingPattern = new SchedulingPattern(schedulingPattern);
-		this.time = (start / (1000 * 60)) * 1000 * 60;
+		// introduction d'une erreure
+		this.time = (start / (1000 * 60)) * 1000 * 60
 	}
 
 	/**
